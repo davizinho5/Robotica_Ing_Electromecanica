@@ -52,10 +52,10 @@ Cada tutorial se encuentra en la carpeta tutoriales.
 
 ### 🔹 Bloque 1 – Preparación y comunicación con el robot
 
-1. [**Configuración del PC y del robot**](https://github.com/davizinho5/Robotica_master/blob/main/tutoriales/01_configuracion_pc_robot.md)
+1. [**Configuración del PC y del robot**](https://github.com/davizinho5/Robotica_Ing_Electromecanica/blob/main/tutoriales/01_configuracion_pc_robot.md)
    Configuración de red, RTDE, Remote Control y primer test de comunicación.
 
-2. [**Tests del paquete `ur_rtde`**](https://github.com/davizinho5/Robotica_master/blob/main/tutoriales/02_tests_ur_rtde.md)
+2. [**Tests del paquete `ur_rtde`**](https://github.com/davizinho5/Robotica_Ing_Electromecanica/blob/main/tutoriales/02_tests_ur_rtde.md)
    Pruebas independientes de `rtde_receive`, `rtde_control` y `rtde_io`.
 
 ---
