@@ -58,5 +58,10 @@ Cada tutorial se encuentra en la carpeta tutoriales.
 2. [**Tests del paquete `ur_rtde`**](https://github.com/davizinho5/Robotica_Ing_Electromecanica/blob/main/tutoriales/02_tests_ur_rtde.md)
    Pruebas independientes de `rtde_receive`, `rtde_control` y `rtde_io`.
 
+### 🔹 Bloque 2 – Integración con ROS 2
+
+3. [**Creación del paquete ROS 2 `UR3_rtde`**]([https://github.com/davizinho5/Robotica_master/blob/main/tutoriales/03_paquete_UR3_driver.md](https://github.com/davizinho5/Robotica_Ing_Electromecanica/blob/main/tutoriales/03_paquete_UR3_driver.md))
+   Publicación del estado del robot en topics estándar.   
+
 ---
 
