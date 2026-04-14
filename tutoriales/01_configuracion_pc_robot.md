@@ -150,7 +150,7 @@ Ajustes → Sistema → Control Remoto
 
 ### 5.2 URCap External Control (solo UR3e)
 
-1. Instalar URCap *External Control* (debería estar hecho ya)
+1. Instalar URCap *External Control* (debería estar hecho ya). Si no, puede [descargarlo aquí](https://github.com/UniversalRobots/Universal_Robots_ExternalControl_URCap/releases).
 2. Crear un programa nuevo
 3. Añadir el nodo External Control
 4. Revisa que la información de la IP del PC es correcta.
