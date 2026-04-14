@@ -60,7 +60,7 @@ Cada tutorial se encuentra en la carpeta tutoriales.
 
 ### 🔹 Bloque 2 – Integración con ROS 2
 
-3. [**Creación del paquete ROS 2 `UR3_rtde`**]([https://github.com/davizinho5/Robotica_master/blob/main/tutoriales/03_paquete_UR3_driver.md](https://github.com/davizinho5/Robotica_Ing_Electromecanica/blob/main/tutoriales/03_paquete_UR3_driver.md))
+3. [**Creación del paquete ROS 2 `UR3_rtde`**](https://github.com/davizinho5/Robotica_master/blob/main/tutoriales/03_paquete_UR3_driver.md](https://github.com/davizinho5/Robotica_Ing_Electromecanica/blob/main/tutoriales/03_paquete_UR3_driver.md)
    Publicación del estado del robot en topics estándar.   
 
 ---
