@@ -235,5 +235,3 @@ ros2 topic echo /joint_states
 
 Este paquete constituye un **un informador del estado de los sensores del robot UR3e**, mínimo pero funcional, en ROS 2.
 
-En el [siguiente tutorial](https://github.com/davizinho5/Robotica_master/blob/main/tutoriales/04_visualizacion_RVIZ.md) se utilizará este nodo para **visualizar el robot en RViz**.
-
