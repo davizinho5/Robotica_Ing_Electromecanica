@@ -22,7 +22,11 @@ Al finalizar este tutorial, el estudiante será capaz de:
   - `geometry_msgs/WrenchStamped`
 - Integrar `ur_rtde` dentro de nodos ROS 2
 
+<<<<<<< Updated upstream
 Tenga en cuenta que ROS2 tiene muchas más mensajes estándar ya creados. Si tiene interés, puede consultar en los siguientes enlaces los mensajes que hay en las librerías:  [sensors](https://docs.ros.org/en/humble/p/sensor_msgs/__message_definitions.html) y [geometry](https://docs.ros.org/en/humble/p/geometry_msgs/__message_definitions.html).
+=======
+Tenga en cuenta que ROS2 tiene muchas más mensajes estándar ya creados. Si tiene interés, puede consultar en los siguientes enlaces los mensajes que hay en las librerías:  [sensor_msgs](https://docs.ros.org/en/humble/p/sensor_msgs/__message_definitions.html) y [geometry_msgs](https://docs.ros.org/en/humble/p/geometry_msgs/__message_definitions.html).
+>>>>>>> Stashed changes
 
 ---
 
@@ -96,6 +100,11 @@ Archivo: `UR3_driver/ur3_state_publisher_node.py`
 import rclpy
 from rclpy.node import Node
 
+<<<<<<< Updated upstream
+=======
+from scipy.spatial.transform import Rotation as R
+
+>>>>>>> Stashed changes
 from sensor_msgs.msg import JointState
 from geometry_msgs.msg import PoseStamped
 from geometry_msgs.msg import WrenchStamped
@@ -116,7 +125,10 @@ class UR3StatePublisher(Node):
         self.pose_pub = self.create_publisher(PoseStamped, '/tcp_pose', 10)
         self.force_pub = self.create_publisher(WrenchStamped, '/tcp_force', 10)
 
+<<<<<<< Updated upstream
         # Mantener frecuencias moderadas (50–100 Hz)
+=======
+>>>>>>> Stashed changes
         self.timer = self.create_timer(0.02, self.update)  # 50 Hz
 
         self.get_logger().info('UR3 state publisher iniciado')
@@ -140,10 +152,18 @@ class UR3StatePublisher(Node):
         pose = PoseStamped()
         pose.header.stamp = js.header.stamp
         pose.header.frame_id = 'base'
+<<<<<<< Updated upstream
         pose.pose.position.x = tcp[0]
         pose.pose.position.y = tcp[1]
         pose.pose.position.z = tcp[2]
 
+=======
+	# Posición
+        pose.pose.position.x = tcp[0]
+        pose.pose.position.y = tcp[1]
+        pose.pose.position.z = tcp[2]
+        
+>>>>>>> Stashed changes
         # Orientación (rotvec → quaternion)
         rot = R.from_rotvec([tcp[3], tcp[4], tcp[5]])
         q = rot.as_quat()  # devuelve [x, y, z, w]
@@ -157,11 +177,23 @@ class UR3StatePublisher(Node):
         # TCP force
         wrench = self.rtde_r.getActualTCPForce()
 
+<<<<<<< Updated upstream
         fs = WrenchStamped()
         fs.header.stamp = js.header.stamp
         fs.name = ['Fx', 'Fy', 'Fz', 'Tx', 'Ty', 'Tz']
         fs.position = wrench
         self.force_pub.publish(fs)
+=======
+        fp = WrenchStamped()
+        fp.header.stamp = js.header.stamp
+        fp.wrench.force.x = wrench[0]
+        fp.wrench.force.y = wrench[1]
+        fp.wrench.force.z = wrench[2]                
+        fp.wrench.torque.x = wrench[3]
+        fp.wrench.torque.y = wrench[4]        
+        fp.wrench.torque.z = wrench[5]        
+        self.force_pub.publish(fp)
+>>>>>>> Stashed changes
 
 
 def main():
@@ -235,3 +267,7 @@ ros2 topic echo /joint_states
 
 Este paquete constituye un **un informador del estado de los sensores del robot UR3e**, mínimo pero funcional, en ROS 2.
 
+<<<<<<< Updated upstream
+=======
+En el [siguiente tutorial](/tutoriales/04_visualizacion_RVIZ.md) se utilizará este nodo para **visualizar el robot en RViz**.
+>>>>>>> Stashed changes

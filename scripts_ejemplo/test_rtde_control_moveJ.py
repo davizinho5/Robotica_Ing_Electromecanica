@@ -11,7 +11,7 @@ delta = -10 * 3.141592653589793 / 180.0
 
 q_actual = rtde_r.getActualQ()
 q_target = list(q_actual)
-q_target[5] += delta  # pequeño movimiento
+q_target[4] += delta  # pequeño movimiento
 
 print("Moviendo robot...")
 rtde_c.moveJ(q_target, speed=0.2, acceleration=0.1)

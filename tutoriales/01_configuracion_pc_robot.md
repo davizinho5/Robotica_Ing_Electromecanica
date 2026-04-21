@@ -223,4 +223,4 @@ python3 test_rtde.py
 
 ## 10. Conclusión
 
-El sistema está listo para avanzar al [siguiente tutorial](https://github.com/davizinho5/Robotica_master/blob/main/tutoriales/02_tests_ur_rtde.md), donde se profundizará en el uso de las interfaces `rtde_receive`, `rtde_control` y `rtde_io`. 
+El sistema está listo para avanzar al [siguiente tutorial](/tutoriales/02_tests_ur_rtde.md), donde se profundizará en el uso de las interfaces `rtde_receive`, `rtde_control` y `rtde_io`. 

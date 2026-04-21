@@ -52,16 +52,35 @@ Cada tutorial se encuentra en la carpeta tutoriales.
 
 ### 🔹 Bloque 1 – Preparación y comunicación con el robot
 
-1. [**Configuración del PC y del robot**](https://github.com/davizinho5/Robotica_Ing_Electromecanica/blob/main/tutoriales/01_configuracion_pc_robot.md)
+1. [**Configuración del PC y del robot**](/tutoriales/01_configuracion_pc_robot.md)
    Configuración de red, RTDE, Remote Control y primer test de comunicación.
 
-2. [**Tests del paquete `ur_rtde`**](https://github.com/davizinho5/Robotica_Ing_Electromecanica/blob/main/tutoriales/02_tests_ur_rtde.md)
+2. [**Tests del paquete `ur_rtde`**](/tutoriales/02_tests_ur_rtde.md)
    Pruebas independientes de `rtde_receive`, `rtde_control` y `rtde_io`.
 
 ### 🔹 Bloque 2 – Integración con ROS 2
 
+<<<<<<< Updated upstream
 3. [**Creación del paquete ROS 2 `UR3_rtde`**](https://github.com/davizinho5/Robotica_Ing_Electromecanica/blob/main/tutoriales/03_paquete_UR3_driver.md)
    Publicación del estado del robot en topics estándar.   
 
+=======
+3. [**Creación del paquete ROS 2 `UR3_rtde`**](/tutoriales/03_paquete_UR3_driver.md)
+   Publicación del estado del robot en topics estándar.
+
+4. [**Visualización del robot en RViz2 (URDF y TF)**](/tutoriales/04_visualizacion_RVIZ.md)
+   Integración del modelo URDF, `robot_state_publisher` y árbol TF.
+
+5. [**Servicio ROS 2 para control de la pinza**](/tutoriales/05_servicio_pinza.md)
+   Apertura y cierre de la pinza mediante un servicio booleano.
+
+6. [**Crear un nuevo servicio en ROS 2**](/tutoriales/06_crear_un_nuevo_servicio.md)
+   Control básico del robot usando topics y exclusividad manual.
+
+### 🔹 Bloque 3 – Movimiento del robot
+
+7. [**Movimiento por topics (moveJ y moveL)**](/tutoriales/06_movimiento_por_topics.md)
+   Control básico del robot usando topics y exclusividad manual.
+>>>>>>> Stashed changes
 ---
 

@@ -237,4 +237,4 @@ Resultado esperado:
 
 Tras este tutorial, el estudiante conoce y ha probado todas las interfaces principales de `ur_rtde`, quedando preparado para integrarlas dentro de nodos ROS 2. 
 
-Está listo para avanzar al [siguiente tutorial](https://github.com/davizinho5/Robotica_master/blob/main/tutoriales/03_paquete_UR3_driver.md), donde se integragan algunas interfaces de rtde en ROS2. 
+Está listo para avanzar al [siguiente tutorial](/tutoriales/03_paquete_UR3_driver.md), donde se integragan algunas interfaces de rtde en ROS2. 
