@@ -132,7 +132,8 @@ En el primer terminal, ejecute los 2 siguiente comandos, cada uno de ellos:
 - Carga la descripción URDF del robot UR3e recién generada
 - 
 ```
-ros2 run xacro xacro /opt/ros/humble/share/ur_description/urdf/ur.urdf.xacro name:=ur ur_type:=ur3e > /tmp/ur3.urdfros2 run robot_state_publisher robot_state_publisher /tmp/ur3.urdf
+ros2 run xacro xacro /opt/ros/humble/share/ur_description/urdf/ur.urdf.xacro name:=ur ur_type:=ur3e > /tmp/ur3.urdf
+ros2 run robot_state_publisher robot_state_publisher /tmp/ur3.urdf
 ```
 
 En otro terminal, lance el un nodo `robot_state_publisher`, que ya está hecho en ROS2, que publica el TF y TF_static, usado para colocar los modelos 3D del robot en el mundo. 
