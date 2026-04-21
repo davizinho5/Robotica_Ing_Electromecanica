@@ -1,4 +1,4 @@
-# 06 – Movimiento del UR3 mediante topics ROS 2 (moveJ y moveL)
+# 07 – Movimiento del UR3 mediante topics ROS 2 (moveJ y moveL)
 
 En este tutorial se implementa el **control del movimiento del robot UR3e mediante topics ROS 2**, utilizando internamente la interfaz **`rtde_control`**. El objetivo es usar un mecanismo **simple e intuitivo**, adecuado para primeros prototipos y para comprender las limitaciones de los topics cuando se controla el movimiento de un brazo robótico.
 
