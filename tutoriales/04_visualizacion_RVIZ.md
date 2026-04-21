@@ -139,7 +139,7 @@ ros2 run robot_state_publisher robot_state_publisher /tmp/ur3.urdf
 En otro terminal, lance el un nodo `robot_state_publisher`, que ya está hecho en ROS2, que publica el TF y TF_static, usado para colocar los modelos 3D del robot en el mundo. 
 
 ```
-ros2 run robot_state_publisher robot_state_publisher /tmp/ur3.urdf
+ros2 run UR3_driver ur3_state_publisher
 ```
 
 En otro terminal, lance el nodo `ur3_state_publisher`que realizó anteriormente y que publica la información de la posición de los motores del robot.
