@@ -74,7 +74,7 @@ Cada tutorial se encuentra en la carpeta tutoriales.
 
 ### 🔹 Bloque 3 – Movimiento del robot
 
-7. [**Movimiento por topics (moveJ y moveL)**](/tutoriales/06_movimiento_por_topics.md)
+7. [**Movimiento por topics (moveJ y moveL)**](/tutoriales/07_movimiento_por_topics.md)
    Control básico del robot usando topics y exclusividad manual.
 
 ---
