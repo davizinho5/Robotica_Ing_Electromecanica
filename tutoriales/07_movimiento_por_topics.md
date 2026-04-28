@@ -200,7 +200,6 @@ Cuando usamos topics para relizar movimientos, hay una serie de limitaciones por
 - No se puede cancelar un movimiento
 - La gestión de la exclusividad es manual
 
-Estas limitaciones motivan el uso de **actions**, que, si quiere, puede aprender a usar en el [siguiente tutorial](https://github.com/davizinho5/Robotica_master/blob/main/tutoriales/07_movimiento_por_actions.md).
 
 ---
 
