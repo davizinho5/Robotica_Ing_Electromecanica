@@ -1,4 +1,4 @@
-# Mini‑proyecto: Célula robotizada Torre → Cinta → Mesa con ROS 2
+# Proyecto: Célula robotizada Torre → Cinta → Mesa con ROS 2
 
 Este tutorial propone un proyecto para integrar los distintos componentes desarrollados a lo largo del curso para construir una **célula robotizada** basada en ROS 2 y un robot UR3/UR3e.
 
@@ -143,5 +143,10 @@ ur3_application/
     ├── __init__.py
     └── cell_controller_node.py
 ```
+
+Se recomienda incluir un lanzador de ROS2 (`launch`) para lanzar la ejecución de los nodos del driver. 
+
+Se podrán añadir otras funcionalidades propuestas por el alumno.
+
 ---
 
