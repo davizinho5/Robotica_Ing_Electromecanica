@@ -48,6 +48,7 @@ import rtde_control
 import rtde_receive
 
 from scipy.spatial.transform import Rotation as R
+import numpy as np
 
 class UR3MotionTopics(Node):
 
@@ -113,7 +114,7 @@ class UR3MotionTopics(Node):
             p = msg.pose.position
 
             # ---- Lee orientación objetivo ----            
-            quat_input = np.array([q.x, q.y, q.z, q.w])
+            quat_input = np.array([msg.pose.orientation.x, msg.pose.orientation.y, msg.pose.orientation.z, msg.pose.orientation.w])
 
             # ¿El usuario envió orientación válida?
             if np.allclose(quat_input, np.zeros(4), atol=1e-6):
