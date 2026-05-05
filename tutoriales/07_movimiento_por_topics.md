@@ -114,7 +114,7 @@ class UR3MotionTopics(Node):
             p = msg.pose.position
 
             # ---- Lee orientación actual y la pone como objetivo ----
-            tcp_pose = rtde_r.getActualTCPPose()          
+            tcp_pose = self.rtde_r.getActualTCPPose()          
             quat_input = np.array([tcp_pose.orientation.x, tcp_pose.orientation.y, tcp_pose.orientation.z, tcp_pose.orientation.w])
 
             # ¿El usuario envió orientación válida?
