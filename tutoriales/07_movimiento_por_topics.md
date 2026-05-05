@@ -98,8 +98,7 @@ class UR3MotionTopics(Node):
 
     # -------------------------------
     # Callback del movimiento lineal
-    # MOVEL - Para la orientación
-    # Si el usuario manda un quaternion (0,0,0,0) → NO es válido → se mantiene la orientación actual.
+    # MOVEL - Se muece a la posición objetivo manteniendo la orientación actual
     # -------------------------------
 
     def movel_cb(self, msg):
