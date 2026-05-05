@@ -114,20 +114,9 @@ class UR3MotionTopics(Node):
             p = msg.pose.position
 
             # ---- Lee orientación actual y la pone como objetivo ----
-            tcp_pose = self.rtde_r.getActualTCPPose()          
-            quat_input = np.array([tcp_pose.orientation.x, tcp_pose.orientation.y, tcp_pose.orientation.z, tcp_pose.orientation.w])
+            tcp = self.rtde_r.getActualTCPPose()
+            rotvec = np.array([tcp[3], tcp[4], tcp[5]])
 
-            # ¿El usuario envió orientación válida?
-            if np.allclose(quat_input, np.zeros(4), atol=1e-6):
-                # No hay orientación en el mensaje → usar orientación actual del robot
-                tcp = self.rtde_r.getActualTCPPose()
-                rotvec = np.array([tcp[3], tcp[4], tcp[5]])
-            else:
-                # Usuario envió orientación → convertir cuaternión → rotvec
-                rot = R.from_quat(quat_input)
-                rotvec = rot.as_rotvec()
-
-            p = msg.pose.position
             target = [p.x, p.y, p.z, rotvec[0], rotvec[1], rotvec[2] ]
 
             # envia movimiento
