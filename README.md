@@ -77,5 +77,9 @@ Cada tutorial se encuentra en la carpeta tutoriales.
 7. [**Movimiento por topics (moveJ y moveL)**](/tutoriales/07_movimiento_por_topics.md)
    Control básico del robot usando topics y exclusividad manual.
 
+### 🔹 Proyecto Integrador
+
+8. [**Proyecto propuesto**](/tutoriales/08_proyecto_celda_torre_cinta_mesa.md) para integrar las capcidades ofrecidas por ROS2.
+
 ---
 
