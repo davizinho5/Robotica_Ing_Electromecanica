@@ -64,7 +64,7 @@ class UR3MotionTopics(Node):
         self.accel = self.get_parameter('acceleration').value
 
         self.rtde_c = rtde_control.RTDEControlInterface(robot_ip)
-        self.rtde_r = rtde_receive.RTDEReceiveInterface(ROBOT_IP)
+        self.rtde_r = rtde_receive.RTDEReceiveInterface(robot_ip)
 
         # Usado para marcar cuando el robot se está moviemtno y no debe aceptar nuevas órdenes
         self.busy = False
