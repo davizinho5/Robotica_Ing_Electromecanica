@@ -64,6 +64,7 @@ class UR3MotionTopics(Node):
         self.accel = self.get_parameter('acceleration').value
 
         self.rtde_c = rtde_control.RTDEControlInterface(robot_ip)
+        self.rtde_r = rtde_receive.RTDEReceiveInterface(ROBOT_IP)
 
         # Usado para marcar cuando el robot se está moviemtno y no debe aceptar nuevas órdenes
         self.busy = False
@@ -110,11 +111,11 @@ class UR3MotionTopics(Node):
 
         try:
             # ---- Lee posición objetivo ----
-
             p = msg.pose.position
 
-            # ---- Lee orientación objetivo ----            
-            quat_input = np.array([msg.pose.orientation.x, msg.pose.orientation.y, msg.pose.orientation.z, msg.pose.orientation.w])
+            # ---- Lee orientación actual y la pone como objetivo ----
+            tcp_pose = rtde_r.getActualTCPPose()          
+            quat_input = np.array([tcp_pose.orientation.x, tcp_pose.orientation.y, tcp_pose.orientation.z, tcp_pose.orientation.w])
 
             # ¿El usuario envió orientación válida?
             if np.allclose(quat_input, np.zeros(4), atol=1e-6):
